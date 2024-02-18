@@ -7,8 +7,10 @@ const cors = require('cors'); // Import cors
 const app = express();
 
 
+
 // Allow all origins for demonstration purposes
 app.use(cors());
+
 
 mongoose.connect('mongodb+srv://krishnendughosal999:Hardwork%4034@cluster0.ircni7a.mongodb.net/');
 mongoose.connection.once('open', () => {
